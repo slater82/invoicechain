@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { Card, Button, Badge } from '../components/ui/LayoutPrimitives';
 import { MOCK_INVOICES } from '../constants';
-import { Invoice } from '../types';
+import { Invoice } from '../../types';
 
 const RiskGradeBadge = ({ grade }: { grade: string }) => {
   const colors: Record<string, string> = {

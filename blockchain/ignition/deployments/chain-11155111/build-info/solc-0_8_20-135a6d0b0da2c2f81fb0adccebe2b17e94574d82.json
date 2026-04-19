@@ -1,0 +1,39 @@
+{
+  "_format": "hh3-sol-build-info-1",
+  "id": "solc-0_8_20-135a6d0b0da2c2f81fb0adccebe2b17e94574d82",
+  "solcVersion": "0.8.20",
+  "solcLongVersion": "0.8.20+commit.a1b79de6",
+  "userSourceNameMap": {
+    "contracts/InvoiceChain.sol": "project/contracts/InvoiceChain.sol"
+  },
+  "input": {
+    "language": "Solidity",
+    "settings": {
+      "evmVersion": "shanghai",
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "": [
+            "ast"
+          ],
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ]
+        }
+      },
+      "remappings": []
+    },
+    "sources": {
+      "project/contracts/InvoiceChain.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\n\ncontract InvoiceChain {\n    uint256 public invoiceCount;\n\n    event InvoiceCreated(\n        uint256 indexed invoiceId,\n        address indexed creator,\n        string buyer,\n        uint256 amount\n    );\n\n    function createInvoice(string memory buyer, uint256 amount) public {\n        invoiceCount++;\n        emit InvoiceCreated(invoiceCount, msg.sender, buyer, amount);\n    }\n}\n"
+      }
+    }
+  }
+}

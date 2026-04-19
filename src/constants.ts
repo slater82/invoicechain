@@ -1,4 +1,4 @@
-import { Invoice, Activity, User } from './types';
+import { Invoice, Activity, User } from '../types';
 
 export const CURRENT_USER: User = {
   id: 'u1',

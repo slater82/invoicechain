@@ -10,18 +10,40 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "react-router-dom": "^7.11.0",
-    "lucide-react": "^0.562.0",
     "framer-motion": "^12.23.26",
-    "recharts": "^3.6.0",
-    "tailwind-merge": "^3.4.0",
+    "lucide-react": "^0.562.0",
     "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^7.11.0",
+    "recharts": "^3.6.0",
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^3.0.6",
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.1",
+    "@tailwindcss/postcss": "^4.1.18",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.23",
+    "forge-std": "^1.1.2",
+    "hardhat": "^3.1.4",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
     "typescript": "~5.8.2",
+    "viem": "^2.44.4",
     "vite": "^6.2.0"
-  }
+  },
+  "description": "**Instant Liquidity for India's MSMEs** - Transform unpaid invoices into instant working capital through blockchain-powered invoice financing.",
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/error9098x/invoicechain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/error9098x/invoicechain/issues"
+  },
+  "homepage": "https://github.com/error9098x/invoicechain#readme"
 }
